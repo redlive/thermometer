@@ -1,12 +1,9 @@
-# thermometer
+# Thermometer
 Code Test - EDP
 
 
-Instalation:
-
+##Instalation:
 npm install
 
-
-Run Server:
-
+##Run Server:
 node server
