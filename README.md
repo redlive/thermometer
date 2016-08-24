@@ -1,12 +1,20 @@
-# thermometer
-Code Test - EDP
+# Thermometer
+##Code Test - EDP
 
+### Instalation:
+```
+git clone https://github.com/redlive/thermometer.git
+```
 
-Instalation:
+```
+cd thermometer
+```
 
+```
 npm install
+```
 
-
-Run Server:
-
+### Run Server:
+```
 node server
+```
