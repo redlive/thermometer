@@ -21,18 +21,17 @@ angular.module('edp.thermo').component('edpThermo', {
             model.tObj = ThermoService.getTemperature(model.viewMode);
 
             if (!prevTemperature) {
+                model.showDirecton = true;
                 prevTemperature = model.tObj.temperature.value;
             } else {
-
+                model.showDirecton = false;
                 if (!inRange(prevTemperature, model.tObj.temperature.value)) {
                     model.showDirecton = true;
-                    if (model.tObj.temperature.value > prevTemperature && !model.increased) {
+                    if (model.tObj.temperature.value > prevTemperature && !model.boiling) {
                         model.boiling = true;
-                    } else if (model.tObj.temperature.value < prevTemperature && model.increased) {
+                    } else if (model.tObj.temperature.value < prevTemperature && model.boiling) {
                         model.boiling = false;
                     }
-                } else {
-                    model.showDirecton = false;
                 }
 
                 prevTemperature = model.tObj.temperature.value;
