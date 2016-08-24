@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/redlive/thermometer#readme",
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "concat-files": "^0.1.0"
   }
 }

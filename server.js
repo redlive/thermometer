@@ -2,6 +2,29 @@ var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs")
+
+var concat = require('concat-files');
+
+concat([
+    './assets/css/app.css',
+    './assets/fonts/style.css',
+    './modules/core/thermo/thermo.css'
+], './dist/app.concate.css', function(c) {
+    console.log('done css concate');
+});
+
+concat([
+    './modules/core/thermo/thermo.module.js',
+    './modules/core/thermo/thermo.service.js',
+    './modules/core/thermo/thermo.component.js',
+    './modules/utils/converters/converters.module.js',
+    './modules/utils/converters/converters.service.js',
+    './assets/js/app.js',
+], './dist/app.concate.js', function(c) {
+    console.log('done js concate');
+});
+
+
 port = process.argv[2] || 8888;
 
 http.createServer(function(request, response) {
