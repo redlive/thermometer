@@ -1,0 +1,17 @@
+body {
+    font: normal 12px/14px Arial, Tahoma;
+}
+
+.component {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 5px 5px 10px;
+    border: solid 1px #ddd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.icon-arrow-up {
+    display:inline-block;
+    opacity:1;
+}

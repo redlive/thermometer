@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="edp">
+<head>
+    <meta charset="UTF-8">
+    <title>Code test - EDP</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./modules/core/thermo/thermo.css">
+
+</head>
+<body>
+
+    <section class="components-placeholder">
+        <edp-thermo view-mode="C"></edp-thermo>
+        <edp-thermo view-mode="F"></edp-thermo>
+    </section>
+
+    <script src="./node_modules/angular/angular.min.js"></script>
+
+    <script src="./modules/utils/converters/converters.module.js"></script>
+    <script src="./modules/utils/converters/converters.service.js"></script>
+
+    <script src="./modules/core/thermo/thermo.module.js"></script>
+    <script src="./modules/core/thermo/thermo.service.js"></script>
+    <script src="./modules/core/thermo/thermo.component.js"></script>
+
+
+    <script src="./assets/js/app.js"></script>
+
+
+
+</body>
+</html>

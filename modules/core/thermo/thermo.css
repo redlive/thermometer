@@ -1,0 +1,47 @@
+.edpThermo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+.edpThermo .temperatureLine {
+    height: 20px;
+    background: #ddd;
+    overflow: hidden;
+}
+.edpThermo .temperature {
+    height: inherit;
+    background: #2196f3;
+    transition: background-color 0.5s ease, width 1s;
+}
+.edpThermo .temperature.positive {
+    background: #f44336;
+}
+
+.edpThermo ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.edpThermo ul li {
+    display: inline-block;
+    overflow: hidden;
+}
+.edpThermo ul li span {
+    font-size: 10px;
+    text-align: left;
+    border-left: solid 1px #000;
+    padding-left:3px;
+}
+
+.edpThermo .icon-arrow-up.positive.inRange,
+.edpThermo .icon-arrow-up.negative.inRange {
+    opacity:0;
+}
+.edpThermo .icon-arrow-up.boiling {
+    color: #f44336;
+}
+
+.edpThermo .icon-arrow-up.freezing {
+    color: #2196f3;
+    transform: rotate(-180deg);
+}

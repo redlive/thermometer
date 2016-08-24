@@ -1,0 +1,23 @@
+{
+  "name": "thermometer",
+  "version": "1.0.0",
+  "description": "Code Test - EDP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redlive/thermometer.git"
+  },
+  "author": "Evgeny Vilder",
+  "email": "vilder.eugene@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redlive/thermometer/issues"
+  },
+  "homepage": "https://github.com/redlive/thermometer#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

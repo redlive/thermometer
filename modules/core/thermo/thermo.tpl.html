@@ -1,0 +1,18 @@
+<div class="edpThermo component">
+    <div class="chart">
+        <div class="column-temerature">
+            <h1>
+                <i class="icon-arrow-up" ng-class="edpThermoModel.temperatureStatusClass"></i>
+                {{edpThermoModel.tObj.temperature.value | temperature : edpThermoModel.tObj.viewMode}}
+            </h1>
+        </div>
+        <div class="temperatureLine">
+            <div class="temperature" ng-class="edpThermoModel.temperatureClass" ng-style="edpThermoModel.temperatureStyle.line"></div>
+        </div>
+        <ul>
+            <li ng-style="edpThermoModel.temperatureStyle.tick" ng-repeat="tick in edpThermoModel.tObj.ticks">
+                <span>{{tick | temperature : edpThermoModel.tObj.viewMode}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
